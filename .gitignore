@@ -1,0 +1,27 @@
+# Hyperledger Fabric generated secrets & artifacts
+test-network/organizations/**/msp/keystore/
+test-network/organizations/**/msp/tlscacerts/
+test-network/organizations/**/msp/cacerts/
+test-network/organizations/**/tls/
+test-network/ordererOrganizations/
+test-network/peerOrganizations/
+**/channel-artifacts/**
+**/*.block
+**/*.tx
+
+# builds / wallets / deps
+**/wallet/**
+**/build/**
+node_modules/
+
+# certs/keys (avoid leaking)
+**/*.pem
+**/*.crt
+**/*.key
+**/*_sk
+
+# local env
+.env
+
+# chaincode packages
+**/*.tar.gz
